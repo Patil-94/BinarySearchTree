@@ -30,7 +30,7 @@ namespace BinarySearchTree
 
         int LeftCount = 0;
         int RightCount = 0;
-        bool result = false;
+//bool result = false;
 
         public void Insert(T item)//create method and pass parameter item
         {
@@ -51,6 +51,13 @@ namespace BinarySearchTree
             }
         }
 
+        /// <summary>
+        /// Get size of Binary Search Tree
+        /// </summary>
+        public void GetSize()
+        {
+            Console.WriteLine("\nSize " + (1 + LeftCount + RightCount));
+        }
         public void Display()
         {
             if (LeftTree != null)
